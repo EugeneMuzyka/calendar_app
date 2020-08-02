@@ -1,0 +1,102 @@
+//typograhy
+$default-rem: 16px;
+//color button
+%bc_color-blue {
+    background-color: #267df4;
+}
+
+//for button
+%button-color-ff-fs-fw {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+%brd-rad21 {
+    border-radius: 21px;
+}
+
+//flex
+%flspacebetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+%flex_justify-content_centr {
+    display: flex;
+    justify-content: center;
+}
+
+//ссылки хидера, спицификация шрифтов
+%font_family_size_weight {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+%h1-title {
+    color: #26272d;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 3.87rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+}
+
+//спец.текста main
+%main_text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+//text-main__content_button
+%main__content_button {
+    border-radius: 25px;
+    border: 1px solid hsla(231, 8%, 16%, 0.1);
+    width: 205px;
+    height: 50px;
+}
+
+//спец.текста h3
+%h3_tekst {
+    color: #26272d;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.62rem;
+    font-weight: 300;
+    line-height: 2.12rem;
+}
+
+//product description
+%text-product_description {
+    width: 493px;
+    color: #8c8f94;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.12rem;
+    font-weight: 400;
+    line-height: 1.62rem;
+}
+
+//border bottom  product description
+%border_bottom_product_description {
+    border-bottom: 1px solid hsla(231, 8%, 16%, 0.1);
+    border-radius: 1px;
+}
+
+//protected-discription__img
+%protected-discription__img {
+    max-width: 905px;
+    max-height: 772px;
+}
+
+//H2title
+%H2_title {
+    max-width: 237px;
+    max-height: 94px;
+    color: #26272d;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.62rem;
+    font-weight: 400;
+    line-height: 3.25rem;
+}

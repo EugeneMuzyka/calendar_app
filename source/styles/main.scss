@@ -1,0 +1,251 @@
+            //write here your scss styles
+            @import './shared/index';
+            @import 'reset';
+            html {
+                font-size: $default-rem;
+            }
+            
+            *,
+            *::before,
+            *::after {
+                box-sizing: inherit;
+            }
+            
+            div {
+                box-sizing: border-box;
+            }
+            
+            body {
+                margin: 0;
+            }
+            
+            .container {
+                max-width: 1600px;
+                margin: 0 auto;
+                padding: 0;
+            }
+            /*main*/
+            
+            .main {
+                width: 100%;
+                background-image: url(../img/background_photo_header.png)
+            }
+            
+            .main__header-menu {
+                max-width: 1170px;
+                margin: 0 auto;
+                padding-top: 3.75rem;
+                @extend %flspacebetween;
+            }
+            
+            &__header-menu_left {
+                width: 275px;
+                margin: auto 0;
+                @extend %flspacebetween;
+            }
+            
+            &__header-menu_left-linc {
+                color: #26272d;
+                @extend %font_family_size_weight;
+            }
+            
+            &__header-menu_logo {
+                margin: auto 0;
+            }
+            
+            &__header-menu_right {
+                width: 290px;
+                @extend %flspacebetween;
+            }
+            
+            &__header-menu_right-link {
+                margin: auto 0;
+                color: #26272d;
+                @extend %font_family_size_weight;
+            }
+            
+            &__header-menu_right-link:first-child {
+                opacity: 0.4;
+            }
+            
+            .main__header-menu_button {
+                width: 130px;
+                height: 40px;
+                padding: 10px 24px 15px 48px;
+                border-radius: 21px;
+                @extend %flspacebetween;
+                @extend %bc_color-blue;
+            }
+            
+            button {
+                border: none;
+                background: none;
+                display: block;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            .button-text {
+                width: 60px;
+                height: 15px;
+                color: #ffffff;
+                @extend %font_family_size_weight
+            }
+            
+            .fa-apple {
+                color: #ffffff;
+                margin: 0 0.62rem 0 -2.5rem;
+                font-size: 17px;
+            }
+            
+            &__content {
+                max-width: 780px;
+                margin: 0 auto;
+            }
+            
+            &__content_title {
+                margin: 7.6rem auto 2.5rem;
+                @extend %h1-title
+            }
+            
+            .main__content_title-animation {
+                opacity: 0;
+                transform: translateX(-45px);
+                animation: show-from-left 500ms ease;
+                animation-fill-mode: forwards;
+            }
+            
+            @keyframes show-from-left {
+                100% {
+                    opacity: 1;
+                    transform: translateX(0)
+                }
+            }
+            
+            &__content_text {
+                margin-bottom: 3.75rem;
+                text-align: center;
+                color: #8c8f94;
+                @extend %main_text;
+                @extend %flex_justify-content_centr
+            }
+            
+            &__content_button {
+                margin: 0 auto 3.4rem;
+                @extend %main__content_button;
+            }
+            
+            &__content_button-teg {
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                @extend %flex_justify-content_centr
+            }
+            
+            .fa-play {
+                color: #26272d;
+                margin-right: 0.93rem;
+            }
+            
+            &__content_button_text {
+                color: #26272d;
+                @extend %font_family_size_weight
+            }
+            
+            &__image {
+                max-width: 370px;
+                max-height: 455px;
+                margin: 0 auto;
+            }
+            
+            &__image_size {
+                width: 100%;
+                height: 100%;
+                margin-left: 0.65rem;
+            }
+            /*Описание продукта*/
+            
+            .prodict-discription {
+                max-width: 1100px;
+                margin: 7.9rem auto 2.5rem;
+                padding-bottom: 10.4rem;
+                display: flex;
+                @extend %border_bottom_product_description
+            }
+            
+            .prodict-discription__left {
+                margin-right: 6.87rem;
+            }
+            
+            .prodict-discription__left-right_title {
+                margin: 2.8rem 0 3.12rem;
+                @extend %h3_tekst
+            }
+            
+            .prodict-discription__left-right_text {
+                @extend %text-product_description
+            }
+            /*описание защиты*/
+            
+            .protected-discription {
+                display: flex;
+                margin-top: 7.87rem;
+            }
+            
+            &__img {
+                margin: 0 6.25rem 0 -8.3rem;
+                @extend %protected-discription__img
+            }
+            
+            &__reference_title {
+                @extend %H2_title
+            }
+            
+            &__reference_text {
+                max-width: 470px;
+                margin: 4.6rem 0 4.6rem;
+                color: #8c8f94;
+                @extend %main_text;
+            }
+            
+            &__reference_button {
+                display: flex;
+            }
+            
+            &__reference_button_left-teg {
+                width: 202px;
+                height: 42px;
+                color: #ffffff;
+                margin-right: 1.25rem;
+                @extend %bc_color-blue;
+                @extend %brd-rad21;
+                @extend %font_family_size_weight
+            }
+            
+            &__reference_button_left-teg-img {
+                margin-left: 3.12rem;
+            }
+            
+            &__reference_button_left-teg-link {
+                @extend %button-color-ff-fs-fw
+            }
+            
+            &__reference_button_right {
+                width: 140px;
+                height: 40px;
+                @extend %flex_justify-content_centr;
+            }
+            
+            &__reference_button_right-teg {
+                width: 100%;
+                height: 100%;
+                border-radius: 21px;
+                border: 1px solid hsla(231, 8%, 16%, 0.1);
+            }
+            
+            &__reference_button_right-teg-link {
+                color: #26272d;
+                @extend %font_family_size_weight;
+            }
