@@ -94,7 +94,6 @@ $default-rem: 16px;
 
 //product description
 %text-product_description {
-    width: 493px;
     color: #8c8f94;
     font-family: 'Lato', sans-serif;
     font-size: 1.12rem;
@@ -105,7 +104,6 @@ $default-rem: 16px;
 //border bottom  product description
 %border_bottom_product_description {
     border-bottom: 1px solid hsla(231, 8%, 16%, 0.1);
-    border-radius: 1px;
 }
 
 //protected-discription__img

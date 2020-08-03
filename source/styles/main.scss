@@ -181,13 +181,27 @@ a {
     margin: 7.9rem auto 2.5rem;
     padding-bottom: 10.4rem;
     display: flex;
+    flex-wrap: wrap;
     @extend %border_bottom_product_description;
+    @media screen and (max-width:769px) {
+        justify-content: center;
+    }
 }
 
-.product-discription__left {
-    margin-right: 6.87rem;
+.product-discription__item {
+    flex: 1 1 calc(50% - 3.44rem);
+    &:first-child {
+        margin-right: 6.88rem;
+    }
+    @media screen and (max-width:769px) {
+        flex: 1 1 100%;
+        max-width: 600px;
+        &:first-child {
+            margin-right: 0;
+            margin-bottom: 3rem;
+        }
+    }
 }
-
 .product-discription__left-right_title {
     margin: 2.8rem 0 3.12rem;
     @extend %h3_tekst;
@@ -201,8 +215,28 @@ a {
 /*описание защиты*/
 
 .protected-discription {
-    display: flex;
+    background-image: url(../img/iPhone_6.jpg);
+    background-repeat: no-repeat;
+    background-size: 905px;
+    background-position: -120px top;
     margin-top: 7.87rem;
+    min-height: 780px; //height of iPhone_6.jpg - чтобы не обрезалась картинка из-за малого контента
+
+    @media screen and (max-width: 769px) {
+        background-image: none;
+        min-height: auto;
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 100px;
+        
+        @media screen and (max-width: 769px) {
+            padding-top: 0;
+            justify-content: center;
+        }
+    }
     &__img {
         margin: 0 6.25rem 0 -19rem;
         @extend %protected-discription__img;
@@ -253,7 +287,17 @@ a {
 
 
 /*О доверии*/
+.confidence {
+    background-image: url(../img/World_Map.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% + 152px) top;
+    background-size: 996px;
 
+    @media screen and (max-width: 769px) {
+        background-position: left top;
+        background-size: 100%;
+    }
+}
 .confidence__parent {
     display: flex;
     margin: 13.5rem 0 14rem 0;
